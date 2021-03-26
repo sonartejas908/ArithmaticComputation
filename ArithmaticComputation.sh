@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 echo "Enter three Numbers:"
 read a b c
@@ -25,7 +25,8 @@ for ((i=1; i<=4; i++))
 do
 	array[$i]=${results[$i]}
 done
+
 echo Array is : ${array[@]}
-
-
+sorted=($(printf '%s\n' "${array[@]}" | sort -nr ))
+echo "Descending Sorted : ${sorted[@]}"
 
