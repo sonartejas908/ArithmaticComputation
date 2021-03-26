@@ -13,3 +13,11 @@ echo $result3
 
 result4=$(($a%$b+$c))
 echo $result4
+
+declare -A results
+results[1]=$result
+results[2]=$result2
+results[3]=$result3
+results[4]=$result4
+
+echo ${results[@]}
