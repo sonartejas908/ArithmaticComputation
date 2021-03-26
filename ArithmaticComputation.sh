@@ -20,4 +20,12 @@ results[2]=$result2
 results[3]=$result3
 results[4]=$result4
 
-echo ${results[@]}
+
+for ((i=1; i<=4; i++))
+do
+	array[$i]=${results[$i]}
+done
+echo Array is : ${array[@]}
+
+
+
